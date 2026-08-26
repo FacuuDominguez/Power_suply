@@ -2347,10 +2347,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:L7805"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:AMS1117-5.0"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2362,7 +2359,7 @@
 					)
 				)
 			)
-			(property "Value" "L7805"
+			(property "Value" "AMS1117-5.0"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -2371,19 +2368,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0.635 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-				(at 0 -1.27 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2391,7 +2377,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2400,7 +2395,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Voltage Regulator 1.5A Positive"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2409,7 +2404,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2418,10 +2413,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "L7805_0_1"
+			(symbol "AMS1117-5.0_0_1"
 				(rectangle
-					(start -5.08 1.905)
-					(end 5.08 -5.08)
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2431,18 +2426,18 @@
 					)
 				)
 			)
-			(symbol "L7805_1_1"
+			(symbol "AMS1117-5.0_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "IN"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2460,7 +2455,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2471,14 +2466,14 @@
 				(pin power_out line
 					(at 7.62 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8701,7 +8696,25 @@
 			"AEIAZgBwAGYAYgBIADgAcwArAEMAVQBoAHcAMgAvADUAQQA5AG8AbQBDAFcAUAA4AC8ALwBJAC8A"
 			"LwAvAGUAVgByAFYAeQBXADEAbgBYAE8ASQBqAEsAaQBZAHMATABSAGUAQwBLAEUAVQA1AFMAWgBG"
 			"AHIAQwBKAFkAagBjADQANwBBADAAUQBFAHEASQBoAGsAbABlAE8AdABNAG0AOQBNAGkARQBqAHkA"
-			"UQBGADAAZABBAEcAQgBmADgAZQBVADMAQQB0AGIAcQB4ADQAcABkAGYASgBBAGYAWg=="
+			"UQBGADAAZABBAEcAQgBmADgAZQBVADMAQQB0AGIAcQB4ADQAcABkAGYASgBBAGYAWgBwAHcAVABJ"
+			"AGoAUAA4AGMAUgBIADIAVgB2AHYARABOAHIATgA5AG4ATwB3AGQARwB3AG8AKwBnAFkAZQBWAGoA"
+			"dwB6AEUANwBvADkAVAAvAHIAMgBNAFgAbgAvAHQAegBiADMAUgBNAE0AMAAyAHYAUwB2AEMATQBP"
+			"ADUAMABXAG8AMQBhAE0AdwB4AGkANAA0ADMAMwByAHMASQB6AEIAUABhAG0AQwByAFkAWQBZAE4A"
+			"KwA1AEMASQBFAEEANABxAEQAUABnAFkAbgA0AFkARgBhAE0AQQBHAEIARQA5AHAANgBGAHUAQgBu"
+			"AHAAQgBvAEUAVQBRAGwAVAB6AEUAYgAzADMARgBSAC8AUwBlADEAOQBGAG8AawBLAEkAcQBsAHAA"
+			"WQBKAFkAMABQAHcAOQB5AHEATgBFAHQASQBLAE4AQwBZAGYAUQBZAHkARQBTAEcAeQBNAFMAWQBN"
+			"AFEAKwBkAGMASgBkADkAagByAFQAMgBNAEsASgBRAEsAaQAwAEkASABRAFYARABxAFAASgBRAEIA"
+			"UwAwAHIAegB2AEEARAB4ADUAbwBYACsARwA2AC8AKwA3ADUAMQBPACsANgA1ADcANwB2ADcANgAx"
+			"AC8ANwBNAE0AZgB6AG8AUgB6ADgANgBkACsANwBjAFkARABDAFEASQBtAEoAQwA3AFEAcQBkAGEA"
+			"MABTAE0ANAB6AGoAWABPAFEAQQA0ADcAMQBDAGkAQgA3AGIATwBTAEMAbQBxAGkAUwB0AEsAaABT"
+			"ACsAKwArAFAASQBIAEMATABHADMAQgBrAE4AaABHAEMAWgBKAHMAcgAyADkAcgBWAFEAbwBBADcA"
+			"VwB5AHMAcgBLADUAdQBYAG4AbQB6AEoAbABUAHAAOAA1AGMAdgBIAGcAcABIAFkANgBBAGsATgBG"
+			"ADcANABOAFgAZABqAGEAVABWAG0AQwBLAFcAVQBzADUAMABPADcATgBUAGMAegB0AHIAYQB6AGIA"
+			"TgA1AGkAZQA2AEQARABRAG8AUwBpAEUAbABFAGwAdQBuAFMAUQBUAHMAbQBBAFUATABnAGMARABF"
+			"ADcAQQBSAEoARgBPAGcAWgBIAGQAcwBzAEwAeABWAFMAVQBxAC8AcgBmAHMARQBKAFQARQB5ADAA"
+			"QgBzAGkAcgA0ACsARwAxAHYAUwAwAGoAZgBFAGYAWABMAC8ARgBnAEoANwBRADUAdQA1AEsARQBZ"
+			"ADUAUQBFAEoASgBVAGkAYwBYAFgAMwB4AGsAQwBuAHAAYwBsAEwAQwBXAEcAawBDAE8AMgBJADMA"
+			"SwBXAGQAcQA4AHIAcABlADgALwBjADUAKwB2AHcAKwBzAHIASwBqAFQASQBkACsAVQ=="
 		)
 	)
 	(label "Vin+"
@@ -8827,6 +8840,21 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 16.51 38.1) (xy 101.6 38.1) (xy 101.6 83.82) (xy 16.51 83.82)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 2ae65df4-3516-40d4-ad48-1a8aba3ed5e6)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 16.51 132.08) (xy 72.39 132.08) (xy 72.39 163.83) (xy 16.51 163.83)
 			)
 			(stroke
@@ -8836,7 +8864,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 554c61d4-0384-4dd6-8b2a-0815052ece61)
+			(uuid 35e3867a-011b-4ad4-8811-b74d86e6b1a7)
 		)
 	)
 	(rule_area
@@ -8851,37 +8879,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 8c75d706-382c-44bf-8a6b-d35068bea635)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 16.51 90.17) (xy 62.23 90.17) (xy 62.23 128.27) (xy 16.51 128.27)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 938b6869-fef7-4c1f-b323-fd01ebd25db9)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 16.51 38.1) (xy 101.6 38.1) (xy 101.6 83.82) (xy 16.51 83.82)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid e61efad6-3b86-4bba-9d5f-f3089bd91894)
+			(uuid 7fd7b2d9-5823-44b9-bd4a-15edef04a829)
 		)
 	)
 	(rule_area
@@ -8896,7 +8894,22 @@
 			(fill
 				(type none)
 			)
-			(uuid ec8c899d-bef6-44d9-8ffa-1d38bcf2a80b)
+			(uuid a0998515-8965-4a82-ae13-86f9ce4653a3)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 16.51 90.17) (xy 62.23 90.17) (xy 62.23 128.27) (xy 16.51 128.27)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid bf22ad9d-6aaa-45f6-9cfc-d1763d115778)
 		)
 	)
 	(symbol
@@ -9672,6 +9685,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AMS1117-5.0")
+		(at 40.64 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ae5ae02-11a6-4d63-9237-47ad61a1a942")
+		(property "Reference" "U1"
+			(at 40.64 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AMS1117-5.0"
+			(at 40.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 40.64 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 43.18 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+			(at 40.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f93de318-40f2-4c7f-aee3-4a5399adbc54")
+		)
+		(pin "2"
+			(uuid "18a80d87-07ab-4ad7-baca-eac18c4aee47")
+		)
+		(pin "1"
+			(uuid "2af1b603-2506-4478-ab39-9d9b10d9c8cd")
+		)
+		(instances
+			(project ""
+				(path "/56483414-dde1-424f-a5bb-0826d0865f2d"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 80.01 118.11 0)
 		(unit 1)
@@ -10420,79 +10504,6 @@
 			(project "Fuente de tensión regulable"
 				(path "/56483414-dde1-424f-a5bb-0826d0865f2d"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:L7805")
-		(at 40.64 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ba92186-e764-4e90-ad9a-717afb8bdd0d")
-		(property "Reference" "U1"
-			(at 40.64 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L7805"
-			(at 40.64 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 41.275 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf"
-			(at 40.64 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 1.5A 35V Linear Regulator, Fixed Output 5V, TO-220/TO-263/TO-252"
-			(at 40.64 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "df6289dd-feba-496a-bcab-8bee1f61a31a")
-		)
-		(pin "1"
-			(uuid "4b7de7a8-7332-45ff-9774-ac8f6729f961")
-		)
-		(pin "3"
-			(uuid "01f87e08-705e-4e40-9be9-8ccff17f4719")
-		)
-		(instances
-			(project ""
-				(path "/56483414-dde1-424f-a5bb-0826d0865f2d"
-					(reference "U1")
 					(unit 1)
 				)
 			)
