@@ -8714,7 +8714,25 @@
 			"ADcAQQBSAEoARgBPAGcAWgBIAGQAcwBzAEwAeABWAFMAVQBxAC8AcgBmAHMARQBKAFQARQB5ADAA"
 			"QgBzAGkAcgA0ACsARwAxAHYAUwAwAGoAZgBFAGYAWABMAC8ARgBnAEoANwBRADUAdQA1AEsARQBZ"
 			"ADUAUQBFAEoASgBVAGkAYwBYAFgAMwB4AGsAQwBuAHAAYwBsAEwAQwBXAEcAawBDAE8AMgBJADMA"
-			"SwBXAGQAcQA4AHIAcABlADgALwBjADUAKwB2AHcAKwBzAHIASwBqAFQASQBkACsAVQ=="
+			"SwBXAGQAcQA4AHIAcABlADgALwBjADUAKwB2AHcAKwBzAHIASwBqAFQASQBkACsAVQBwAGIAVwAw"
+			"AFcALwBlAG4AbQBqADIASwBNAFgAVQBSAFQAQgBnAFEAUwBYAFIAOAA1AE4AVQBRADQAdAAyAHYA"
+			"MAB1AHkAVABpAFEAMAAvAFcARwAxADIAWQA5AEgAdwB4AGUAZgAwAEgAVwBnAG8AMQAwAHAAQQBr"
+			"AEUAWQBsAHkAcgA3AHcAMQBTAGIAZgAzAEsAeAB0AFoAMAA3AGQAcgBHAHkAdgBxAGwAOQBIAHEA"
+			"UQBpAEoANwBLAGIARQAyAEYAQgBTAHkASQArAHQAMwBKAG4ATAAyADIAWgB6AFoAMwA2ADEASABr"
+			"AGMAegAzAFkARwBOAG0AZABRAGUAdwBoAEkAQQBFAEEAWABnAEEAZwBDAGgAawBrADkAWABvAFMA"
+			"MQB3AEgAQQBXAGUAcwBQAFoAdgA5AFYANAB2ADYAVgA1AG4AQgBlAFoAbQBWAFoAbABvAFgAUgBS"
+			"AHUAOQB2AE0AQwBZAEcAbABsAEsAUwBrAEcARQBRAGsANABDAHkATABMAFUAcABLAG4ASgBBAE4A"
+			"ZgBOADEAWQBXAEgAKwBvAFkAYwBlACsAcwBwAFgAdgB2AEwAWgB6ADMANwAyAHkASgBIAEYAYQBq"
+			"AGYAZQBtAHMAbgAvADcAVwBqADEAMwBlAHcAdwBKADMASAB6AEsAdwBJAEsANgBrAHgATwBmAE8A"
+			"OQA3ADMAOAB1AHkANwBEAC8ALwA5AEMAZgBEADQAZgBDAEoASgA1ADUAWQBXAGwAcABhAFcAbABy"
+			"ADYAQQBEAGYAUwBiAGIAdAB0AC8ALwByAHQASQB3AE8AeAB2ADkATgArAEEAMQA5AHYAWQBmADgA"
+			"dABMAHkAOAAvAC8AdQB0AGYAdgBQAFQAaQBLADMAdAA3AEkAMABsAGkAYwBuAEsAbQBYAG0ALwAz"
+			"ACsAegB1ADUAaABWAEEAbwBZADgAdwBvAHoAZABmAFcAVgBoAGMAWABsADUAUgBTAE0AegBQAFQA"
+			"VgBhACsAcQBVAE0ATABMAHEAbABFAGEARQBCAFcAUgBSAE0AUwBxAHoANgBFAGEAdABRAG4AZwBx"
+			"ADgANwBWAHEAaAB3AHIAaABQAEMAZQBpAGEAUgB6ADUAZwBCADYAbQBkAGsAYgB3ADIAKwBiAG8A"
+			"bABPADEAVAA5AHoAcQB5AHcANgA3AEIAZwAvAHoAZQAxAFUAZABOAHcAeAB2AGsAbwB5AEMASQBE"
+			"AGcAcwBoAGwAVQBTAEYAbwBjADAAbAB2ADAASABrAGoAUABhAEUAVgBGAEYAMABTAHEASwBMAEcA"
+			"bQAwAHMAOAB3AEEAeQBwADEAZQBQAHcAeABEAEsAUQBOAHYAcgBKAEoAUgBXAFgAaA=="
 		)
 	)
 	(label "Vin+"
@@ -8840,7 +8858,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 16.51 38.1) (xy 101.6 38.1) (xy 101.6 83.82) (xy 16.51 83.82)
+				(xy 16.51 90.17) (xy 62.23 90.17) (xy 62.23 128.27) (xy 16.51 128.27)
 			)
 			(stroke
 				(width 0)
@@ -8849,22 +8867,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 2ae65df4-3516-40d4-ad48-1a8aba3ed5e6)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 16.51 132.08) (xy 72.39 132.08) (xy 72.39 163.83) (xy 16.51 163.83)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 35e3867a-011b-4ad4-8811-b74d86e6b1a7)
+			(uuid 15c89b54-a99d-4a32-b69c-108aa97d4e04)
 		)
 	)
 	(rule_area
@@ -8879,7 +8882,37 @@
 			(fill
 				(type none)
 			)
-			(uuid 7fd7b2d9-5823-44b9-bd4a-15edef04a829)
+			(uuid 4d52ea85-7139-4b57-b20e-7f6a87d06566)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 16.51 132.08) (xy 72.39 132.08) (xy 72.39 163.83) (xy 16.51 163.83)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 685485e4-c2c2-4c1e-951e-6a3bef4e62c9)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 16.51 38.1) (xy 101.6 38.1) (xy 101.6 83.82) (xy 16.51 83.82)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid c3582a32-e815-46cf-9cd7-23463c5b2c2c)
 		)
 	)
 	(rule_area
@@ -8894,22 +8927,7 @@
 			(fill
 				(type none)
 			)
-			(uuid a0998515-8965-4a82-ae13-86f9ce4653a3)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 16.51 90.17) (xy 62.23 90.17) (xy 62.23 128.27) (xy 16.51 128.27)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid bf22ad9d-6aaa-45f6-9cfc-d1763d115778)
+			(uuid ef1283fe-cfab-42af-919e-25d32dd3fca5)
 		)
 	)
 	(symbol
@@ -10265,7 +10283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 46.99 64.77 0)
 			(effects
 				(font
